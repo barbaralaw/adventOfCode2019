@@ -9,6 +9,8 @@ function runOpCode(opCode) {
     } else if (opCode[i] === 2) {
       console.log(i);
       opCode[toSwitch] = opCode[ind1]*opCode[ind2];
+    } else if (opCode[i] === 99) {
+      break;
     }
   }
   return (`Value at position 0 is ${opCode[0]}.`);
